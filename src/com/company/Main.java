@@ -6,6 +6,6 @@ public class Main
     {
         IDandPassword iDandPassword = new IDandPassword();
 
-        LoginPage loginPage = new LoginPage();
+        LoginPage loginPage = new LoginPage(iDandPassword.getLoginInfo());
     }
 }
