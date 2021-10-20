@@ -1,8 +1,11 @@
 package com.company;
 
-public class Main {
+public class Main
+{
+    public static void main(String[] args)
+    {
+        IDandPassword iDandPassword = new IDandPassword();
 
-    public static void main(String[] args) {
-	// write your code here
+        LoginPage loginPage = new LoginPage();
     }
 }
