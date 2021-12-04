@@ -35,7 +35,7 @@ public class LoginPage implements ActionListener
         frame.add(userPasswordLabel);
         frame.add(messageLabel);
         frame.add(userIDField);
-        frame.add(userPasswordLabel);
+        frame.add(userPasswordField);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 420);
