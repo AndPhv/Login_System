@@ -74,6 +74,16 @@ public class LoginPage implements ActionListener
                     messageLabel.setText("Login successful");
                     WelcomePage welcomePage = new WelcomePage();
                 }
+                else
+                {
+                    messageLabel.setForeground(Color.red);
+                    messageLabel.setText("Wrong password!");
+                }
+            }
+            else
+            {
+                messageLabel.setForeground(Color.red);
+                messageLabel.setText("Username not found!");
             }
         }
     }
