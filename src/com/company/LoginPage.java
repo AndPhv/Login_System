@@ -61,5 +61,20 @@ public class LoginPage implements ActionListener
             userIDField.setText("");
             userPasswordField.setText("");
         }
+        if (e.getSource()==loginButton)
+        {
+            String userID = userIDField.getText();
+            String password = String.valueOf(userPasswordField.getPassword());
+
+            if (logininfo.containsKey(userID))
+            {
+                if (logininfo.get(userID).equals(password))
+                {
+                    messageLabel.setForeground(Color.GREEN);
+                    messageLabel.setText("Login successful");
+                    WelcomePage welcomePage = new WelcomePage();
+                }
+            }
+        }
     }
 }
