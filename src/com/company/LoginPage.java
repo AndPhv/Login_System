@@ -7,8 +7,6 @@ import java.util.HashMap;
 
 public class LoginPage implements ActionListener
 {
-    HashMap<String, String> logininfo = new HashMap<String, String>();
-
     JFrame frame = new JFrame();
     JButton loginButton = new JButton("Login");
     JButton resetButton = new JButton("Reset");
@@ -22,6 +20,17 @@ public class LoginPage implements ActionListener
     LoginPage(HashMap<String, String> loginInfoOriginal)
     {
         logininfo = loginInfoOriginal;
+
+        userIDLabel.setBounds(50, 100, 75, 25);
+        userPasswordLabel.setBounds(50, 150, 75, 25);
+
+        frame.add(userIDLabel);
+        frame.add(userPasswordLabel);
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420, 420);
+        frame.setLayout(null);
+        frame.setVisible(true);
     }
 
     @Override
