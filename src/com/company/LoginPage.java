@@ -54,7 +54,12 @@ public class LoginPage implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-
+    public void actionPerformed(ActionEvent e)
+    {
+        if (e.getSource()==resetButton)
+        {
+            userIDField.setText("");
+            userPasswordField.setText("");
+        }
     }
 }
